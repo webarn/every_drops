@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const { hairlineWidth } = require("nativewind/theme");
 module.exports = {
   // NOTE: Update this to include the paths to all of your component files.
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
@@ -26,9 +25,8 @@ module.exports = {
           900: "var(--color-base-900)",
           950: "var(--color-base-950)",
         },
-      },
-      borderWidth: {
-        hairline: hairlineWidth(),
+        // border: "var(--border)",
+        background: "var(--background)",
       },
     },
   },
@@ -36,6 +34,8 @@ module.exports = {
     ({ addBase }) =>
       addBase({
         ":root": {
+          "--background": "#ffffff",
+          "--border": "#e4e4e7",
           "--color-base-50": "#f6f6f6",
           "--color-base-100": "#e7e7e7",
           "--color-base-200": "#d1d1d1",
@@ -52,6 +52,8 @@ module.exports = {
           "--color-primary-600": "#1676FF",
         },
         ".dark:root": {
+          "--background": "#09090b",
+          "--border": "#27272a",
           "--color-base-50": "#262626",
           "--color-base-100": "#333333",
           "--color-base-200": "#454545",

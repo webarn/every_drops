@@ -11,6 +11,7 @@ const lightThemeColors = {
   colors: {
     ...LightTheme.colors,
     primary: "#1676FF",
+    // surfaceVariant: "white",
   },
 };
 
@@ -20,6 +21,7 @@ const darkThemeColors = {
   colors: {
     ...DarkTheme.colors,
     primary: "#50b4ff",
+    // surfaceVariant: "black",
   },
 };
 
