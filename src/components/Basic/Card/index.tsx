@@ -13,9 +13,10 @@ export const Card: React.FC<CardProps> = ({ children, className, style }) => {
 
   return (
     <View
-      className={`overflow-hidden rounded-lg bg-background p-3 ${className || ""}`}
+      className={`overflow-hidden rounded-lg p-4 ${className || ""}`}
       style={[
         {
+          backgroundColor: colorScheme === "dark" ? "#000000" : "#ffffff", // 动态设置背景颜色
           borderWidth: StyleSheet.hairlineWidth,
           shadowColor: "red",
           shadowOffset: { width: 0, height: 2 },
